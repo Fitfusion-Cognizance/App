@@ -46,6 +46,7 @@ dependencies:
     path: dev_lib/calendar_agenda/
   fl_chart: ^0.70.2
   supabase_flutter: ^2.8.4
+  flutter_dotenv: ^5.2.1
 
 
 flutter_native_splash:
@@ -85,6 +86,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

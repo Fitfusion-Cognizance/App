@@ -4,12 +4,14 @@ import 'package:fitnessapp/view/signup/signup_screen.dart';
 import 'package:fitnessapp/view/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   await Supabase.initialize(
-    url: 'https://zckfmvabmosedzfbgumg.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpja2ZtdmFibW9zZWR6ZmJndW1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIzMTMzNDcsImV4cCI6MjA1Nzg4OTM0N30.Ungvha9yUuWU9ufDl7r2Dl4jMxBqfp-xV1n0AoWL9yQ',
+    url: dotenv.env['SUPABASE_URL']!,
+    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
   );
 
   runApp(const MyApp());
