@@ -1,6 +1,3 @@
-Here’s the **README.md** file in code form:
-
-```markdown
 # **FitFusion - Fitness App 🏋️‍♂️**
 
 **FitFusion** is a modern fitness application designed to help users track their workouts, nutrition, and progress while staying motivated through challenges and leaderboards.
@@ -26,46 +23,28 @@ Here’s the **README.md** file in code form:
 
 ### **2️⃣ Installation**
 Clone the repository:
-```sh
+
 git clone https://github.com/yourusername/fitfusion.git
 cd fitfusion
 flutter pub get
-```
 
 ### **3️⃣ Run the App**
 For Android:
-```sh
 flutter run
-```
+
 For iOS:
-```sh
 cd ios
 pod install
 flutter run
-```
 
 ---
 
 ## **🛠 Tech Stack**
 - **Frontend:** Flutter (Dart)
-- **Backend:** Supabase (PostgreSQL)
+- **Backend:** Supabase (PostgreSQL) and Flask
 - **State Management:** Riverpod
 - **Real-time Updates:** WebSockets
-- **Database:** Firestore / Supabase
-
----
-
-## **📜 Permissions**
-Ensure you have the following permissions enabled in `AndroidManifest.xml`:
-```xml
-<uses-permission android:name="android.permission.INTERNET"/>
-```
-
----
-
-## **👥 Contributors**
-- **[Your Name]** - Developer
-- **[Other Team Members]**
+- **Database:** Supabase
 
 ---
 
